@@ -1,1 +1,3 @@
-Here is the secret message.
+Adding a new message.
+ To see how much.
+ Can be extracted.

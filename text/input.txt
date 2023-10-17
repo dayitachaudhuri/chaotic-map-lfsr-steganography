@@ -1,4 +1,1 @@
-In cryptography, plaintext is unencrypted data that is used as input for encryption or output for decryption. It is readable text before it goes through an encryption process or after decryption takes place. 
-Ciphertext is encrypted text that is transformed from plaintext using an encryption algorithm. Ciphertext can't be read until it has been converted into plaintext (decrypted) with a key. 
-A cipher is an algorithm used for encryption or decryption. In a substitution cipher, each character of the plain text is substituted by another character to form the cipher text. 
-There are a number of International Standards relating to key management (e.g. ISO/IEC 11770) and key generation (e.g. ISO/IEC 18031 and ISO/IEC 18032). 
+New Text

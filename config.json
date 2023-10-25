@@ -1,7 +1,7 @@
 {
     "source" : {
-        "image_filename" : "images/lena.png",
-        "video_filename" : "images/run.mp4"
+        "image_filename" : "assets/lena.png",
+        "video_filename" : "assets/run.mp4"
     },
     
     "key" : {

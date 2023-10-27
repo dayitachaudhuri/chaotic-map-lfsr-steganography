@@ -1,0 +1,13 @@
+{
+    "source" : {
+        "image_filename" : "assets/lena.png",
+        "video_filename" : "assets/run.mp4"
+    },
+    
+    "key" : {
+        "hennon_key" : [0.1, 0.1],
+        "lfsr_state" : [1, 1, 1, 1, 1, 1, 1, 1],
+        "lfsr_polynomial" : [3,2,5,7,1]
+    }
+
+}

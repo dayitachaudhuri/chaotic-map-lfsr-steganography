@@ -7,6 +7,8 @@ from pylfsr import LFSR
 
 image = Blueprint("image", __name__, static_folder="static", template_folder="templates")
 
+dirname = os.path.dirname(__file__)
+
 @image.route("/encode")
 def image_encode():
     return render_template("image-encode.html")
@@ -24,8 +26,7 @@ def image_encode_result():
         lfsr_polynomial = request.form['lfsr']
         lfsr_polynomial_list = [int(x) for x in str(lfsr_polynomial)]
 
-        encode(os.path.join(
-                current_app.config['UPLOAD_IMAGE_FOLDER'], "lena.png"), message, key, lfsr_polynomial_list)
+        encode(os.path.join(dirname, 'static/lena.png'), message, key, lfsr_polynomial_list)
         result = request.form
         
         return render_template("image-encode-result.html", result=result, text_encryption=text_encryption, message=message)
@@ -52,10 +53,7 @@ def image_decode_result():
             file.save(os.path.join(
                 current_app.config['UPLOAD_IMAGE_FOLDER'], filename))
             text_decryption = True
-            message = decode(os.path.join(
-                current_app.config['UPLOAD_IMAGE_FOLDER'], "lena.png"),
-                os.path.join(
-                current_app.config['UPLOAD_IMAGE_FOLDER'], filename), key, lfsr_polynomial_list)
+            message = decode(os.path.join(dirname, 'static/lena.png'), os.path.join(dirname, 'static/') + filename, key, lfsr_polynomial_list)
         else:
             text_decryption = False
         result = request.form

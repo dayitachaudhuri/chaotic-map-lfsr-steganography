@@ -14,3 +14,4 @@ Pillow
 pylfsr
 scikit-image
 scipy
+gunicorn

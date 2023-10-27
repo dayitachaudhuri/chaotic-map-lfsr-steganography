@@ -31,7 +31,7 @@ Pygments
 pylfsr
 pyparsing
 python-dateutil
-pywin32
+pypiwin32
 pyzmq
 scikit-image
 scipy

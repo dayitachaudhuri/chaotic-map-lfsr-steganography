@@ -194,7 +194,7 @@ def encode(filename, secret_data, key, poly):
         availablePixels[index][2] += 1
 
     # Save the final image.
-    imagehandler.save(os.path.join(current_app.config['UPLOAD_IMAGE_FOLDER'], "encoded_image.png"), "PNG")
+    imagehandler.save(os.path.join(dirname, "static/encoded_image.png"), "PNG")
 
 # --------------------------------
 # Decoding

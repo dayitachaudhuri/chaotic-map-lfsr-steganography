@@ -1,6 +1,25 @@
 # Audio and Video Steganography Using Chaotic Map and LFSR
 
-Steps to Use the code locally
+### Directory Tree
+
+├───client
+│   ├───modes
+│   │   ├───image
+│   │   │   ├───static
+│   │   │   ├───templates
+│   │   │   └───__pycache__
+│   │   └───video
+│   └───templates
+└───Code
+    ├───assets
+    └───outputs
+        ├───image_steg
+        │   └───histograms
+        └───video_steg
+            ├───frames
+            └───histograms
+
+### Steps to Run the code locally
 
 1. Clone the repository into your local system
 
@@ -17,8 +36,7 @@ Steps to Use the code locally
    source env/bin/activate
    ```
 
-*
-    For Windows*
+* For Windows*
 
 ```
 pip install virtualenv
